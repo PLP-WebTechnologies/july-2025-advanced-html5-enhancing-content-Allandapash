@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 20px auto;
+      max-width: 900px;
+      padding: 20px;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    img, video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #bdc3c7;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #ecf0f1;
+    }
+    ul, ol {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    fieldset {
+      border: 2px solid #bdc3c7;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      background-color: #fdfdfd;
+    }
+    legend {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 600;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #3498db;
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #2ecc71;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #27ae60;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #7f8c8d;
+      border-top: 1px solid #bdc3c7;
+      padding-top: 15px;
+    }
+    .note {
+      font-size: 0.85em;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore the World of Web Development</h1>
+    <p>Welcome to our guide on mastering modern HTML5 techniques for rich content and interactive forms.</p>
+  </header>
+
+  <section aria-labelledby="content-section">
+    <h2 id="content-section">Enhancing Web Content with HTML5</h2>
+    
+    <h3>Key HTML5 Semantic Elements</h3>
+    <ul>
+      <li><strong>header:</strong> Defines introductory content or navigation links.</li>
+      <li><strong>nav:</strong> Contains navigation links.</li>
+      <li><strong>main:</strong> Represents the main content of the document.</li>
+      <li><strong>section:</strong> Groups related content together.</li>
+      <li><strong>article:</strong> Independent, self-contained content like blog posts.</li>
+      <li><strong>aside:</strong> Sidebar content related to the main content.</li>
+      <li><strong>footer:</strong> Contains footer information such as copyright or contact details.</li>
+    </ul>
+
+    <h3>Benefits of Using Lists and Tables</h3>
+    <ol>
+      <li>Improves readability and organization.</li>
+      <li>Enhances accessibility for screen readers.</li>
+      <li>Supports SEO by structuring content clearly.</li>
+      <li>Makes styling and responsive design easier.</li>
+    </ol>
+
+    <h3>Media in HTML5</h3>
+    <p>We can embed various media types natively:</p>
+
+    <figure>
+      <img src="C:\Users\lenovo\Pictures\assets_task_01jvhb76n3e4ws1sqfey932r8q_1747560255_img_2.webp" alt="Illustration of web development concepts including code, design, and responsiveness" />
+      <figcaption>Figure 1: Modern web development combines design, functionality, and user experience.</figcaption>
+    </figure>
+
+    <figure>
+      <video controls aria-label="Introduction to HTML5 video tutorial">
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Figure 2: Sample educational video about HTML5 features.</figcaption>
+    </figure>
+
+    <audio controls aria-label="Background ambient music">
+      <source src="https://www.soundhelix.com/audio/SH_Track1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Popular Web Development Tools Comparison</h3>
+    <table aria-describedby="tool-comparison">
+      <caption>Table: Comparison of popular front-end development tools</caption>
+      <thead>
+        <tr>
+          <th scope="col">Tool</th>
+          <th scope="col">Primary Use</th>
+          <th scope="col">Learning Curve</th>
+          <th scope="col">Popularity (2024)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML5</td>
+          <td>Structure and semantics</td>
+          <td>Easy</td>
+          <td>Very High</td>
+        </tr>
+        <tr>
+          <td>CSS3</td>
+          <td>Styling and layout</td>
+          <td>Moderate</td>
+          <td>Very High</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Interactivity and logic</td>
+          <td>Steeper</td>
+          <td>Very High</td>
+        </tr>
+        <tr>
+          <td>React</td>
+          <td>Component-based UI</td>
+          <td>Moderate to High</td>
+          <td>High</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section aria-labelledby="registration-form">
+    <h2 id="registration-form">User Registration Form</h2>
+    <p>Please fill out the form below to register for our HTML5 masterclass.</p>
+
+    <form action="#" method="post" novalidate>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <div class="form-group">
+          <label for="fullname">Full Name <span aria-label="required">*</span></label>
+          <input 
+            type="text" 
+            id="fullname" 
+            name="fullname" 
+            placeholder="Enter your full name (e.g., Jane Smith)" 
+            required 
+            minlength="2" 
+            autocomplete="name" 
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span aria-label="required">*</span></label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="you@example.com" 
+            required 
+            autocomplete="email" 
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="(555) 123-4567" 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|$$[0-9]{3}$$ [0-9]{3}-[0-9]{4}|[0-9]{10}"
+            autocomplete="tel"
+          />
+          <small class="note">Format: 123-456-7890 or (123) 456-7890</small>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input 
+            type="date" 
+            id="dob" 
+            name="dob" 
+            min="1900-01-01" 
+            max="2010-12-31" 
+            autocomplete="bday"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country" autocomplete="country-name">
+            <option value="">-- Select Country --</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+            <option value="in">India</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Preferences</legend>
+
+        <div class="form-group">
+          <label for="experience">Web Development Experience</label>
+          <select id="experience" name="experience" required autocomplete="section-course experience-level">
+            <option value="">-- Select Level --</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Preferred Learning Format:</p>
+          <div>
+            <input type="checkbox" id="format-online" name="format" value="online" />
+            <label for="format-online">Online (Live Sessions)</label>
+          </div>
+          <div>
+            <input type="checkbox" id="format-self" name="format" value="self-paced" />
+            <label for="format-self">Self-Paced (Recorded)</label>
+          </div>
+          <div>
+            <input type="checkbox" id="format-inperson" name="format" value="in-person" />
+            <label for="format-inperson">In-Person (Limited Availability)</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="interests">Areas of Interest (Optional)</label>
+          <textarea 
+            id="interests" 
+            name="interests" 
+            rows="4" 
+            placeholder="Tell us what aspects of web development interest you most..."
+            maxlength="500"
+            autocomplete="section-course interests"
+          ></textarea>
+          <small class="note">Maximum 500 characters.</small>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account & Security</legend>
+
+        <div class="form-group">
+          <label for="username">Desired Username <span aria-label="required">*</span></label>
+          <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            placeholder="e.g., webdev_jane2025" 
+            required 
+            minlength="4" 
+            maxlength="20" 
+            pattern="[a-zA-Z0-9_]+"
+            autocomplete="username"
+          />
+          <small class="note">Only letters, numbers, and underscores allowed.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Create Password <span aria-label="required">*</span></label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="At least 8 characters: A1!..." 
+            required 
+            minlength="8"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,}"
+            autocomplete="new-password"
+          />
+          <small class="note">Must include uppercase, lowercase, number, and symbol.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password <span aria-label="required">*</span></label>
+          <input 
+            type="password" 
+            id="confirm-password" 
+            name="confirm-password" 
+            placeholder="Re-enter your password" 
+            required
+            autocomplete="new-password"
+            readonly
+            onfocus="this.removeAttribute('readonly');"
+          />
+          <small class="note">Click to enable and confirm your password.</small>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked />
+          <label for="newsletter">Subscribe to our monthly newsletter</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="tos" name="tos" value="accepted" required />
+          <label for="tos">I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a> <span aria-label="required">*</span></label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Register Now</button>
+      <button type="reset" style="background-color: #95a5a6; margin-left: 10px;">Reset Form</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Mastery Guide. All rights reserved.</p>
+    <p>This educational page demonstrates advanced HTML5 content structuring and form validation.</p>
+  </footer>
+
+</body>
+</html>
